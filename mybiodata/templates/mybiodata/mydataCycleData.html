@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <h1>Comprendre la data</h1>
+
+    <h2>Cycle de la vie de la donnée</h2>
+    <p class="suiteh2">En 6 étapes<p>
+
+    
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+            <div width="503" height="468" class="madiv">
+                <img src="https://live.staticflickr.com/65535/52208778103_d50c7a953b_o.png" width="503" height="468" border="0" usemap="#map" />
+
+                <!--La map est l'ensemble des zones cliquables. Une area est une zone cliquable-->
+                <map name="map">
+                    <area shape="rect" coords="1,149,96,172" alt="Collecte" href="http://localhost:8080/mybiodata/mydata/collecte" / target="_blank">
+                    <area shape="rect" coords="177,16,305,41" alt="Traitement" href="http://localhost:8080/mybiodata/mydata/traitement" / target="_blank">
+                    <area shape="rect" coords="389,112,481,133" alt="Analyse" href="http://localhost:8080/mybiodata/mydata/analyse" / target="_blank">
+                    <area shape="rect" coords="393,323,498,348" alt="Stockage" href="http://localhost:8080/mybiodata/mydata/stockage" / target="_blank">
+                    <area shape="rect" coords="200,429,293,454" alt="Partage" href="http://localhost:8080/mybiodata/mydata/partage" / target="_blank">
+                    <area shape="rect" coords="4,323,148,346" alt="Réutilisation" href="http://localhost:8080/mybiodata/mydata/reutilisation" / target="_blank">
+                </map>
+
+            </div>
+        </div>
+    </div>
+
+    <!--En bas ce bouton devra permettre de jouer
+    au jeu "Tadata" -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <button class="monButton"><a  href="http://localhost:8080/mybiodata/mydata/tadata"> Jeu Tadata </a></button>
+        </div>
+    </div>
+
+    <!--Je n'ai pas trouver de manière plus élégente de donner une couleur spéficique à cette page
+    (les autres ont un arrière-plan jaune)-->
+    <link rel="stylesheet" type="text/css" href="{% static 'mybiodata/style2.css' %}">
+
+</main>   
+
+{% endblock %}

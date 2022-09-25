@@ -1,0 +1,175 @@
+/*
+    Pour les pages de la partie "Comprendre la data"
+*/
+
+
+main {
+    background-color: rgb(242, 237, 217);
+}
+
+h1{
+    text-align: center;
+    color: navy;
+}
+
+h2, .suiteh2{
+    color: white;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-decoration: 1px underline white;
+}
+
+
+.suiteh2{
+    font-size: 1.2rem;
+}
+
+
+.lanav{
+    background-color: rgb(134, 167, 216);
+}
+
+.logoPNDB{
+    height: 5%; 
+}
+
+.partieSite{
+    color: white;
+    text-align: center;
+    padding: 0.75rem auto 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.titreArticle{
+    text-align: center;
+    font-size: 1.1rem;
+
+}
+
+.monButton{
+    width: 8rem;
+    margin: 2rem auto;
+    background-color: rgb(69, 96, 168);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.madiv{
+    width: min-content;
+}
+
+/*Note : le footer est une ébauche*/
+
+
+#footer{
+    background-color: rgb(134, 167, 216);
+    color: white;
+    height: 3rem;
+    padding-top: 0.5rem;
+}
+
+#footer > p{
+    margin-left: 2rem ;
+    font-weight: bold;
+}
+
+
+
+/*
+    Pour les autres pages
+*/
+
+.h1agauche{
+    text-align: left;
+}
+
+.pExemple{
+    color: navy;
+    margin: 1.2rem;
+    background-color: white;
+    padding: 0.2rem 0 0.2rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.pEngras{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: navy;
+    margin: 2rem 0 1rem 0 ;
+}
+
+.positionnement{
+    margin-top: 2rem;
+}
+
+.grandPositionnement{
+    padding-top: 9rem;
+}
+
+.espacement{
+    padding-bottom: 2rem;
+}
+
+.recentrage{
+    margin-left: 20rem;
+}
+
+.ajoutMarges{
+    margin: 3rem 0;
+}
+
+
+
+.boutonTadata{
+    width: min-content;
+}
+
+.paraSousStart{
+    font-weight: bold;
+    color: navy;
+    font-size: 1.2rem;
+}
+
+
+
+/*Pour le tableau de la page recherche*/
+
+.row > .col {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.row1 > .col { color: orangered; }
+
+.row2 > .col { color: navy; }
+
+
+/*Pour les tableaux de la page d'accueil*/
+
+
+.beauChiffre{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.bigLetter{
+    font-size: 3rem;
+}

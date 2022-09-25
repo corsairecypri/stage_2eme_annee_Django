@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8">
+
+                <h1 class="h1agauche">Recherche</h1>
+
+                <p class="pExemple">Exemple : Durée de vol d'oiseaux</p>
+
+
+                <!--Le tableau-->
+
+                <div class="container-fluid tabRecherche">
+                    <!--Ligne 1-->
+                    <div class="row justify-content-around row1">
+                        <div class="col">37821</div>
+                        <div class="col">175824</div>
+                        <div class="col">2140</div>
+                        <div class="col">74281</div>
+                    </div>
+
+                    <!--Ligne 2-->
+                    <div class="row justify-content-around row2">
+                        <div class="col">Jeux de données</div>
+                        <div class="col">Ressources</div>
+                        <div class="col">Réutilisations</div>
+                        <div class="col">Utilisateurs</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+                <img src = "{% static 'mybiodata/images/JeuxDeDonnees.PNG' %}" class="img-fluid">
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+</main>
+
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8">
+
+                <h1 class="h1agauche">Importation</h1>
+
+                <p class="pEngras">A propos de l'EML</p>
+
+
+                <!--Les boutons-->
+                <div class="row justify-content-around ">
+                    
+                    <button class="monButton"><a  href="#"> Remplir</a> </button>
+                    <button class="monButton"><a  href="#"> Télécharger</a> </button>
+                    <button class="monButton"><a  href="#"> Documentation</a> </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row justify-content-around espacement">
+            
+            
+
+            <div class="col-md-6">
+
+                <p class="pEngras">C'est quoi l'EML ?</p>
+
+                <p>EML est un format mail brute.<br>
+                Le fichier est standardisé et peut donc être lu par divers outils informatiques et protocoles web.<br>
+                Le format est relativement simple puisqu'il est en brute, on trouve l'en-tête du mail, le sujet et le corps.<br>
+                Les pièces jointes y sont aussi présentes.<br>
+                Bref le même contenu que lorsque vous regardez un mail.
+                </p>
+            </div>
+
+            <div class="col-md-2">
+                <img src = "{% static 'mybiodata/images/Coquillage.PNG' %}" class="img-fluid positionnement">
+            </div>
+
+            
+
+        </div>
+        
+        
+    </div>
+
+</main>
+
+{% endblock %}

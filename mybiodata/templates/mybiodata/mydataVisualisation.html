@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <div class="container-fluid espacement">
+
+        <div class="row justify-content-center">
+
+            <h1 class="h1agauche pEngras recentrage">Visualisation</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            
+            <div class="col-md-2">
+                <!--Div vide pour espacer-->
+            </div>
+
+            <div class="col-md-8">
+
+                <img src = "{% static 'mybiodata/images/visualisation.PNG' %}" class="img-fluid">
+            </div>
+
+            <div class="col-md-2 grandPositionnement">
+                <img src = "{% static 'mybiodata/images/stJacques.PNG' %}" class="img-fluid">
+            </div>
+                
+
+        </div>
+
+        
+    </div>
+
+</main>
+
+{% endblock %}

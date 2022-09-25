@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+
+    <h1>Zones</h1>
+
+    <ul>
+        {% for zone in object_list %}
+            <p>Nom : {{zone.name}}</p>
+            <p>Département : {{zone.departement}}</p>
+            <p>Commune : {{zone.commune}}</p>
+            <p>Ecosystème : {{zone.ecosystem}}</p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

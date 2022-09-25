@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+  <!--Moitié gauche-->  
+
+  <!--Mettre l'image "Collecte 1" avec les fourmis-->
+
+
+  <!--Moitié droite-->
+
+  <!--Mettre le texte, puis l'audio, puis le
+  bouton "suivant"-->
+
+<main>
+
+  <div class="container-fluid">
+
+    <div class="row ">
+
+        <div class="col-md-6">
+            
+            <img src = "{% static 'mybiodata/images/collecte_1_fourmis.PNG' %}" class="img-fluid">
+        </div>
+
+
+        <div class="col-md-6">
+            
+             <div class="fond-blanc">
+                <p class="text-primary small">La récolte de données se fait en analysant
+                une base de données existante, en rassemblant
+                des données ou en construisant sa propre base.<br>
+                La saisie des données peut être faite automatiquement 
+                par les supports de l'entreprise.<br>
+                La collecte de données est toujours initiée par une
+                problématique ou un besoin spécifique. Elles se
+                présente sous différentes formes :</p>
+
+                <ul>
+                  <li class="text-primary small"><b>Fichier excel</b></li>
+
+                  <li class="text-primary small"><b>Enregistrement</b></li>
+
+                  <li class="text-primary small"><b>Résultats d'analyses, sodages, recherches</b></li>
+                </ul>
+
+                <p class="text-primary small">Les données récoltées dans le but de produire
+                une datavisualisation pourraient produire des 
+                résultats inattendus : certaines données pourraient
+                ne pas avoir été prises en compte dès le début de
+                l'enquête, produisant des résultats surprenants. Ces
+                données devront être conservées et feront l'objet d'un
+                tri dans la prochaine étape. Ce tri pourra faire évoluer
+                le postulat de départ en proposant une nouvelle réponse à
+                la problématique dans un angle nouveau et adapté au réel.<br>
+                Définir le type de données nécessaire dès le début de 
+                l'enquête permet de faciliter le travail de traitement par 
+                la suite. Quel phénomène observons-nous ? Est-ce une
+                évolution chronologique, géographique, ou un traitement
+                par catégorie ?<br>
+                Une bonne collecte de données assure une source fiable.</p>
+
+            </div>
+
+            <audio controls src="#"></audio>
+
+            <a href="http://localhost:8080/mybiodata/mydata/traitement"><button class="btn btn-primary">
+              Suivant
+            </button></a>
+        </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

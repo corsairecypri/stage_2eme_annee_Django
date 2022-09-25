@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+
+    <h1>Researchers</h1>
+    <ul>
+        {% for searcher in object_list %}
+            <p>Name : {{searcher.name}} </p>
+            <p>Specialisation : {{searcher.specialisation}} </p>
+            <p>Labo : {{searcher.labo}} </p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

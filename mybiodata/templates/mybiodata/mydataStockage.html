@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<!--Dans une grosse moitié gauche une image--> 
+
+<!--Dans la partie supérieure droite, du texte
+et l'audio-->
+
+<!--En bas à droite, le bouton "suivant"-->
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <img src = "{% static 'mybiodata/images/Stockage_4_fossile.PNG' %}" class="img-fluid">
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="up_right">
+                    <p class="text-primary small">
+                        Pour cette partie un processus de restauration robuste doit
+                        voir le jour afin d'assurer la conservation des datas grâce
+                        à <b>un disque dur, serveur, cloud, ou data warehouse</b>.<br>
+                        Le stockage est inévitable pour répondre aux exigences RGPD
+                        et pour faciliter l'accès aux employés.
+                    </p>
+                    
+                    <audio controls src="#"></audio>
+                </div>
+
+                <div class="down_right">
+        
+                    <a href="http://localhost:8080/mybiodata/mydata/partage"><button class="btn btn-primary">
+                        Suivant
+                    </button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+{% endblock %}

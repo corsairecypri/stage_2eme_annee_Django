@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<!--En haut à gauche l'image "Traitement 2"-->
+
+<!--En haut à droite du texte et l'audio-->
+
+<!--En bas à gauche l'image des abeilles avec
+au milieu au petit texte-->
+
+<!--En bas à droite du texte et le bouton "suivant"-->
+
+<main>
+
+    <div class="container-fluid">
+
+        <!--La moitié supérieure de la page-->
+        <div class="row">
+
+            <div class="col-md-4">
+                <img src = "{% static 'mybiodata/images/2_traitement.PNG' %}" class="img-fluid">
+            </div>
+
+            <div class="col-md-8">
+                <p class="text-primary small">
+                    Le traitement de données commence par le nettoyage
+                    des données "Data wrangling".<br>
+                    On peut ensuite passer par la compression de données
+                    et le cryptage des informations.<br>
+                    Le nettoyage commence par celui des données déjà
+                    stockées (suppression des doublons, des données obsolètes, 
+                    des données incomplètes et des erreurs).<br>
+                    L'amélioration en continu du processus du nettoyage de la
+                    donnée source s'effectue grâce à un procédé automatisé
+                    (règles de tri, de filtres, et étiquetage)
+                </p>
+
+                <audio controls src="#"></audio>
+            </div>
+
+        </div>
+
+        <!--La moitié inférieure de la page-->
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <img src = "{% static 'mybiodata/images/abeilles.PNG' %}" class="img-fluid">
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="fond-blanc">
+                    <p class="text-primary small">Le processus peut se dérouler sous
+                    4 différents systèmes : </p>
+
+                    <p class="text-primary small"><b>Business intelligence</b>: analyse
+                    de volumes de données dans les data-warehouses,
+                    via des applications ou logiciels puis les
+                    convertir en renseignements exploitables. </p>
+
+                    <p class="text-primary small"><b>Virtualisation</b>: manipulation de données
+                    (texte, image...) en provenance de base et systèmes
+                    divers et variés. Abstraction des détails techniques</p>
+
+                    <p class="text-primary small"><b>Machine leaning</b>: intelligence artificielle.
+                    Elle apprend à se développer grâce aux données
+                    qu'elle analyse.</p>
+
+                    <p class="text-primary small"><b>Traitement manuel</b>: saisie, triage, classification
+                    manuelle.</p>
+                </div>
+                
+                <a href="http://localhost:8080/mybiodata/mydata/analyse"><button class="btn btn-primary">
+                    Suivant
+                </button></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+{% endblock %}

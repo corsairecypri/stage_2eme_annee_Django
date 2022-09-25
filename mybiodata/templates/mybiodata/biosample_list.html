@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+
+    <h1>Echantillons</h1>
+    <ul>
+        {% for biosample in object_list %}
+
+            <p><b>Zone : {{biosample.zone}} </b></p>  <!--Le <b> pour mettre en gras sans CSS ni <strong>-->
+            <p>Date : {{biosample.date}} </p>
+
+            <p>Données : </p>
+            {% for sampleData in biosample.sampledata_set.all %}
+
+                <p>Espèce : {{sampleData.species}} - Nombre : {{sampleData.number}}</p>
+                 
+            {% endfor %}
+
+            <br>  <!--Un petit br pour les sauts à la ligne-->
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+
+

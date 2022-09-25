@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block contenu %} 
+
+   <form action="" method="post" enctype="multipart/form-data">
+
+
+    {% for hidden_field in form.hidden_fields %}
+        {{ hidden_field.errors }}
+        {{ hidden_field }}
+    {% endfor %}
+
+    {% csrf_token %}
+
+    Zone : {{ biosample.zone}}
+    Date : {{ biosample.date}}
+
+    {{ form.management_form }}
+    {{ form.non_form_errors }}
+
+
+    {% for sampledata in form.forms %}
+        <hr>
+        {% if sampledata.instance.id %}
+
+       <!-- Sampledata : {{ sampledata.instance.species}}
+        {{ sampledata.instance.number}} -->
+
+        {% endif %}
+
+        <table>
+            {{ sampledata.as_table }}
+        </table>
+
+    {% endfor %}
+
+    <button type="submit" value="Update data" class ="btn btn-primary">
+        Update Data
+    </button>
+    
+   </form>
+      
+    
+
+{% endblock %}
+

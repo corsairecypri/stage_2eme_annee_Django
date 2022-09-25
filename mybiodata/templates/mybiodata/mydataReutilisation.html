@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <div class="container-fluid">
+
+        <!--La moitié supérieure de la page-->
+        <div class="row">
+
+            <!--D'abord l'image "6 réutilisation" et l'image d'une tarte aux pommes-->
+
+            <img class="col-md-3" src = "{% static 'mybiodata/images/6_reutilisation.PNG' %}">
+
+            <img class="col-md-4" src = "{% static 'mybiodata/images/tarte_aux_pommes.PNG' %}">
+
+            <div class="col-md-4">
+                <!--Du texte et un audio-->
+                <p class="text-primary small">
+                    Les données peuvant être utilisées pour d'autres 
+                    raisons qu'initialement. Tout le parcours que nous
+                    venons d'étudier assure à d'autres utilisateurs un 
+                    usage pratique des données. <b>Interopérabilité</b>,
+                    c'est pouvoir utiliser les données via d'autres 
+                    logiciels et interfaces.
+                </p>
+
+                <audio controls src="#"></audio>
+            </div>
+
+        </div>
+
+        <!--La moitié inférieure de la page-->
+
+        <div class="row">
+
+            <!--Des images avec du texte, puis le bouton suivant-->
+
+            <img class="col-md-4" src = "{% static 'mybiodata/images/pomme_1.PNG' %}" >
+
+            <img class="col-md-4" src = "{% static 'mybiodata/images/pomme_2.PNG' %}">
+
+            <img class="col-md-4" src = "{% static 'mybiodata/images/pomme_3.PNG' %}">
+
+            <a href="http://localhost:8080/mybiodata/mydata/"><button class="btn btn-primary col-md-2" >
+            Suivant
+            </button></a>
+
+        </div>
+
+
+    </div>
+    
+</main>
+
+{% endblock %}

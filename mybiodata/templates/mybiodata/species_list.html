@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenu %}
+
+    <h1>Researchers</h1>
+    <ul>
+        {% for species in object_list %}
+            <p>Nom : {{species.species_name}} </p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

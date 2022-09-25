@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<!--Ne pas oublier d'écrire bootstrap4 en début de gabarit-->
+{% load bootstrap4 %}
+<!--Permet d'utiliser Gerbi-->
+{% load pages_tags %}
+
+
+
+{% block contenu %}  
+   
+    <h1>Homepage</h1>
+
+
+    <!--Nouvel entraînement-->
+
+
+    {% bootstrap_label "Champs à remplir" %}
+    
+    {% bootstrap_button "Recommencer" button_type="reset" size="sm" %}
+
+    {% bootstrap_alert "Mon alerte Boostrap marche !!!" alert_type="info" %}
+
+    {% buttons submit='OK' reset="Cancel" %}{% endbuttons %}
+
+    <!--
+    {% bootstrap_form "BioSampleDataFormset" %} -->
+
+{% endblock %}
+

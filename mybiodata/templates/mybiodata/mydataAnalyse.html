@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<!--En arrière plan une grande image que l'on
+voit surtout à gauche et en haut à droite-->
+
+<!--En bas à gauche du texte, l'audio et la bouton "Suivant"-->
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!--
+            <div class="col-md-2">
+
+                <img src = "{% static 'mybiodata/images/3_analyse.PNG' %}" class="img-fluid">
+            </div>
+            -->
+            
+            <!--La grande image en arrière plan je ne sais où la mettre -->
+            <div class="col-md-8">
+
+                <img src = "{% static 'mybiodata/images/Nid2.PNG' %}" class="img-fluid">
+            </div>
+
+
+            <!--Les éléments en bas à gauche -->
+
+            <div class="col-md-4">
+                <p  class="text-primary small">
+                    L'analyse se fait sur les données brutes obtenues après leur
+                    traitement. Une fois l'analyse réalisée, une structure
+                    d'informations permettra de donner des réponses cohérentes
+                    aux problématiques initiales.<br>
+                    L'analyse peut être effectuée grâce à une <b>virtualisation de
+                    data</b>, via le <b>machine learning</b> ou autre. L'utilisation
+                    de formes et de contrastes va faciliter la lecture et donner des clés
+                    évidentes de compréhension. Cette façon de procéder donner un aperçu de 
+                    la réponse à la problématique.
+                </p>
+
+                <audio controls src="#"></audio>
+
+                <a href="http://localhost:8080/mybiodata/mydata/stockage"><button class="btn btn-primary">
+                    Suivant
+                </button></a>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+</main>
+
+
+
+
+
+{% endblock %}

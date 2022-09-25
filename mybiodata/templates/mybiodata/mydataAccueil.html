@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            
+            <div class= "col-md-10">
+
+                <h1 class="h1agauche">Accueil</h1>
+
+                <p class="ajoutMarges">En 2018, le ministère de l'Enseignement supérieur, de la recherche
+                et de l'innovation a inscrit sur sa route la création d'une nouvelle
+                infrastructure intitulée Pôle National de données de Biodiversité (PNDB).
+                Les missions du PNDB s'inscrivent dans une approche FAIR (facile à trouver,
+                Accessible, Intéropérable, Réutilisable), et consistent à : </p>
+
+
+                <!--Le 1er tableau-->
+
+                <div class="container-fluid">
+
+                    <!--Le remplacement de ".col" par ".col-md-3" m'a permit de m'affranchir du code
+                    CSS que j'ai codé pour la page "Recherche" (où j'utilisais ".col")-->
+
+
+                    <!--Ligne 1-->
+                    <div class="row justify-content-around row1">
+                        <div class="col beauChiffre">  1  </div>
+                        <div class="col beauChiffre"> 2  </div>
+                        <div class="col beauChiffre"> 3 </div>
+                        <div class="col beauChiffre">  4 </div>
+                    </div>
+
+
+                    <!--Ligne 2-->
+                    <div class="row justify-content-around">
+
+                        <p class="col-md-3">Fournir un accès aux jeux de données et de métadonnées, à des services
+                        associés et à des produits dérivés des analyses.</p>
+
+                        <p class="col-md-3">Faciliter le partage des pratiques avec les autres communautés de
+                        recherche, favoriser le partage des données et leur réutilisation,
+                        s'insérer dans la réflexion de la future infrastructure Système Terre</p>
+
+                        <p class="col-md-3">Favoriser la cohérence avec les efforts nationaux, européens
+                        et internationaux relatifs à l'accès et à l'exploitation des données
+                        de recherche sur la biodiversité, à la promotion de produits et services.</p>
+
+                        <p class="col-md-3">Promouvoir l'animation scientifique pour identifier les lacunes et
+                        favoriser l'émergence de dispositifs portés par des communautés
+                        d'utilisateurs et producteurs.</p>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-around ajoutMarges">
+
+                    <img src = "{% static 'mybiodata/images/Arbre.PNG' %}" class="col-md-2">
+
+                    <p class="col-md-8">Le PNDB est porté par le Muséum national d'Histoire naturelle,
+                    plus particulièrement par l'UMS 2006 PatriNat, unité MNHH CNRS et 
+                    OFB. Le projet est en lien étroit avec la FRB et plusieurs de ses 
+                    institutions fondatrices (OFB, BRGM, CIRAD, CNRS, Ifremer, INERIS,
+                    INRA, IRD, IRSTEA, MNHN, Univ. Montpeller).</p>
+
+                    <img src = "{% static 'mybiodata/images/Coquillage.PNG' %}" class="col-md-2">
+                </div>
+
+
+
+                <h2 class="pEngras col-md-9">Méthode FAIR</h2>
+
+            
+                <div class="container-fluid  ajoutMarges">
+
+                    <!--Ligne 1-->
+
+
+                    <div class="row justify-content-around row1">
+                        <div class="col"> <h3 class="bigLetter">F </h3> </div>
+                        <div class="col"> <h3 class="bigLetter">A</h3></div>
+                        <div class="col"> <h3 class="bigLetter">I </h3></div>
+                        <div class="col"> <h3 class="bigLetter">R </h3> </div>
+                    </div>
+
+                    
+                    <!--Ligne 2-->
+                    <div class="row justify-content-around">
+                        <div class="col-md-3"> <p> <b>Faciles à (re)trouver</b> </p></div>
+                        <div class="col-md-3"> <p>  <b> Accessibles </b>  </p></div>
+                        <div class="col-md-3"> <p> <b> Intéropérables </b> </p></div>
+                        <div class="col-md-3"> <p>  <b> Réutilisables </b> </p></div>
+                    </div>
+
+
+                    <!--Ligne 3-->
+                    <div class="row justify-content-around">
+
+                        <p class="col-md-3">Les données sont décrites avec des métadonnées permettant de les
+                        identifier. Celles-ci doivent être enregistrées ou indexées dans un
+                        dispositif de recherche comme un moteur web. Ce traitement implique
+                        des arborescences de classement, des mots-clés cohérents et une stratégie
+                        de préservation à long terme des données (archivage sécurisé, etc).</p>
+
+                        <p class="col-md-3">Les données sont récupérables par leur identifiant en utilisant un
+                        protocole standard de communication des licences claires (créative commons,
+                        usage universel...). Les métadonnées doivent rester accessibles même si les
+                        données ne sont plus disponibles. Lelieu de consultation doit être clairement
+                        identifié. L'accès libre est préféré de manière générale.</p>
+
+                        <p class="col-md-3">L'intéropérabilité est sémantique et syntaxique, et elle implique
+                        l'utilisation des métadonnées contextuelles précises, et de contenu et de
+                        formats respectant les grands standards internationaux et utilisant un vocabulaire
+                        informatique respectant les principes FAIR. Les données sont utilisables et
+                        réutilisables selon les différentes plateformes.</p>
+
+                        <p class="col-md-3">La réutilisation (libre, conditionnelle ou payante) doit être facilitée par
+                        l'utilisation de standards communs, grâce à des bases de données rassemblant des 
+                        données claires, vérifiées et bien décrites, directement (ré)utilisables pour
+                        la recherche ou d'autres usages. Les données sont libérées avec une licence
+                        d'utilisation claire et accessible (exemple: Creative Commons).</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+
+</main>
+
+{% endblock %}

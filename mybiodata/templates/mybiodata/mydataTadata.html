@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+<main>
+
+<!--Il faudra mettre ici un header spéficique à cette page-->
+
+<div class="container-fluid">
+
+    <div class="row justify-content-center">
+
+        <p class="col-md-8 ajoutMarges">Vous êtes un scientifique chargé de travailler des données sur les
+        graines de Tadata, une nouvelle plante apparue dans le champ de recherche.
+        Votre mission est de réaliser une datavisualisation sur la quantité de graines
+        de chaque espèce présente dans le champs dans le but d'informer les
+        agriculteurs sur la possibilité de cultiver cette nouvelle espèce.</p>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <a  href="#" class="col-md-1 boutonTadata"> <img src="{% static 'mybiodata/images/start.PNG' %}"> </a> 
+
+        
+    </div>
+
+    <div class="row justify-content-center">
+
+        <p class="col-md-2 paraSousStart">Commencer le jeu</p>
+    </div>
+
+</div>
+
+
+
+
+
+<!--Ajouter ici un bouton pour commencer le jeu-->
+</main>
+
+{% endblock %}

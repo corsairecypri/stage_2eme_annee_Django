@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contenu %} 
+
+  <!--En haut à gauche, l'image "5 Partage" et du texte"--> 
+
+  <!--A droite une grande image décorative-->
+
+  <!--En bas à gauche un graphique, du texte et l'audio--> 
+
+  <!--En bas à droite le bouton "Suivant" -->
+
+<main>
+
+  <div class="container-fluid">
+
+      <!--La moitié supérieure de la page-->
+      <div class="row">
+
+          <div class="col-md-5">
+              <!--Mettre ici l'image "Partage 5" et du texte-->
+
+              <img src = "{% static 'mybiodata/images/5_partage.PNG' %}" class="col-md-4" >
+
+              <p class="text-primary small">
+                Ici les données deviennent exploitables par tout 
+                le monde, elles sont converties et deviennent lisibles
+                généralement sous forme de graphique, vidéo, photo, texte
+                brut... (open data)<br>
+                Le partage doit être fait de manière stricte et réglementée
+                afin d'éviter toute altération et/ou d'attaque malveillante.
+              </p>
+          </div>
+
+          <!--Une div vide pour combler un trou dans la disposition des éléments-->
+          <div class="col-md-2"></div>
+
+          <div class="col-md-5">
+            <!--Aucune idée de comment mettre la grande image
+            mais ça pourrais être là-->
+
+            <img src = "{% static 'mybiodata/images/oiseaux.PNG' %}" class="img-fluid">
+          </div>
+
+      </div>
+
+      <!--La moitié inférieure de la page-->
+
+      <div class="row">
+
+          
+        <!--mettre ici le schéma, le texte et l'audio-->
+
+        <img class= "col-md-4" src = "{% static 'mybiodata/images/Schema.PNG' %}" class="img-fluid">
+
+        <div class="col-md-4">
+
+          <p class="text-primary small">
+            Partager des données c'est aussi faciliter
+            de manière graphique des informations parfois
+            difficiles d'accès pour tout public, c'est 
+            pourquoi il est important de jouer sur le type
+            de représentation, la forme, les couleurs...
+          </p>
+
+          <audio controls src="#"></audio>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <a href="http://localhost:8080/mybiodata/mydata/reutilisation"><button class="btn btn-primary">
+            Suivant
+          </button></a>
+        </div>
+          
+      </div>
+
+  </div>
+
+</main>
+
+
+
+{% endblock %}

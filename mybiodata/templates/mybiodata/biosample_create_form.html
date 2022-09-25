@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block contenu %} 
+
+    
+    <form method="post"> {% csrf_token %}
+        {{ form.as_p }}
+
+
+        {% for sampleData in biosample.sampledata_set.all %}
+        <p>/~~ Données ~~/</p>
+
+        <p>Espèce : {{sampleData.species}} - Nombre : {{sampleData.number}} </p>
+        
+        {% endfor %}
+
+        <input type="submit" value="Update">
+    </form>
+    
+
+    
+{% endblock %}
+
+<!--
+Se renseigner sur les formsets (normaux mais surtout inline):
+https://forum.djangoproject.com/t/how-to-submit-create-view-with-manytomany-model/8018
+-->
